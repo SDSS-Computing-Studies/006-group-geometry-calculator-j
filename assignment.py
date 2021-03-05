@@ -3,13 +3,20 @@
 # Feel free to rename your variables
 
 
-def title():
+def title(e):
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
     # Author: Copper
     # Modified:
     # title
+    print("========================")
+    print("========================")
+    print("Welcome to the Calculator")
+    print("========================")
+    print("========================")
+    e=input("Press The Enter Key to Begin")
+
     return None
 
 def instructions():
@@ -18,6 +25,8 @@ def instructions():
     # output parameters: None
     # Author:
     # Modified:
+    print("Type any Number for 1")
+    t=input(">>>")
     return None
 
 def getParams(shape):
