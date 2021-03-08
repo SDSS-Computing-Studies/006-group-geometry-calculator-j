@@ -69,10 +69,17 @@ def main():
     # the user chooses to exit
     title()
     instructions()
-    squareArea()
-    circleArea()
-    triangleArea()
-    rectangleArea()
+    
+    if instructions()=="Square":
+        squareArea()
+    if instructions()=="Circle":
+        circleArea()
+    if instructions()=="Triangle":
+        triangleArea()
+    if instructions()=="Rectangle":
+        rectangleArea()
+    print("Press C to Continue or Press Q to quit")
+    
 
 
 main()
