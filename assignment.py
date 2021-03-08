@@ -1,9 +1,9 @@
 #!python3
 # Volume Calculator
 # Feel free to rename your variables
+import math
 
-
-def title(e):
+def title():
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
@@ -25,34 +25,54 @@ def instructions():
     # output parameters: None
     # Author:
     # Modified:
+    print("Choose a Shape: Square, Circle, Triangle, Rectangle")
+    a=input(">>> ")
+    pass    
+
+def squareArea():
     print("Type any Number for 1")
     t=input(">>>")
-    return None
+    t=int(t)
+    t=(t**2)
+    print (t)
 
-def getParams(shape):
-    # Will create a list of questions to be asked depending on the shape.
-    # These will be asked so that the user can enter in appropriate values
-    # input parameter: string 
-    # output parameter: return a list containing the prompts for each shape:
-    # example: ["Enter the radius:","Enter the slant height:","Enter the height:"]
-    prompts
+def circleArea():
+    print("Type any Number for 1")
+    t=input(">>>")
+    t=int(t)
+    t=(math.pi * t**2)
+    print(t)
 
-    return prompts
+def triangleArea():
+    print("Type any Number for 1")
+    t=input(">>>")
+    print("Type any Number for 2")
+    f=input(">>>")
+    t=int(t)
+    f=int(f)
+    t=(t*f/2)
+    print(t)
 
-def getInputs(questions):
-    # Will prompt the user for inputs for the shape they.
-    # These will be asked so that the user can enter in appropriate values
-    # It will turn all the input data into a list
-    # input parameter: list containing the prompts/questions
-    # output parameter: return a list containing all the measurements of the shape
-    measurements
-    
-    return measurements
+def rectangleArea():
+    print("Type any Number for 1")
+    t=input(">>>")
+    print("Type any Number for 2")
+    f=input(">>>")
+    t=int(t)
+    f=int(f)
+    t=(t*f)
+    print(t)
 
 def main():
     # main block of code that will run your program and control program flow
     # You will need to include a while loop to keep repeating the commands until
     # the user chooses to exit
     title()
+    instructions()
+    squareArea()
+    circleArea()
+    triangleArea()
+    rectangleArea()
+
 
 main()
