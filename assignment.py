@@ -25,7 +25,7 @@ def instructions():
     # output parameters: None
     # Author:
     # Modified:
-    print ("Choose a Shape from below and then calculated it, Try IT!")
+    print ("Choose a Shape from below and then type it down and type down\n a number and the calculator will calculate the Area, Try IT!")
     print("Choose a Shape: Square, Circle, Triangle, Rectangle or Press Q to Quit")
 
 def squareArea():
