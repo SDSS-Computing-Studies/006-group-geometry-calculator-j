@@ -25,9 +25,8 @@ def instructions():
     # output parameters: None
     # Author:
     # Modified:
-    print("Choose a Shape: Square, Circle, Triangle, Rectangle")
-    a=input(">>> ")
-    pass    
+    print ("Choose a Shape from below and then calculated it, Try IT!")
+    print("Choose a Shape: Square, Circle, Triangle, Rectangle or Press Q to Quit")
 
 def squareArea():
     print("Type any Number for 1")
@@ -67,19 +66,33 @@ def main():
     # main block of code that will run your program and control program flow
     # You will need to include a while loop to keep repeating the commands until
     # the user chooses to exit
-    title()
-    instructions()
-    
-    if instructions()=="Square":
-        squareArea()
-    if instructions()=="Circle":
-        circleArea()
-    if instructions()=="Triangle":
-        triangleArea()
-    if instructions()=="Rectangle":
-        rectangleArea()
-    print("Press C to Continue or Press Q to quit")
-    
 
+    quit = False
+
+    title()
+
+    while quit == False:
+        instructions()
+        a=input(">>> ")
+        if a =="Square":
+            squareArea()
+        elif a =="Circle":
+            circleArea()
+        elif a =="Triangle":
+            triangleArea()
+        elif a =="Rectangle":
+            rectangleArea()
+        else:
+            print ("Invaild, Choose a Shape!")
+        
+        if a == "q":
+            print("Are You Sure to Quit?\n Press C to Continue\n Press Q to Quit")
+            menu=input(">>>")
+            if menu == "c""C":
+                instructions()
+            elif menu == "q""Q":
+                print ("Bye!!!")
+                quit == True
+            break
 
 main()

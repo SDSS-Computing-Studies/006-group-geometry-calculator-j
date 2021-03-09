@@ -11,3 +11,5 @@ def test2():
 
 def test3():
   assert assignment.function() == expected output
+
+test1()
