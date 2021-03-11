@@ -29,23 +29,23 @@ def instructions():
     print("Choose a Shape: Square, Circle, Triangle, Rectangle or Press Q to Quit")
 
 def squareArea():
-    print("Type any Number for 1")
+    print("Type any Number for a Side")
     t=input(">>>")
     t=int(t)
     t=(t**2)
     print (t)
 
 def circleArea():
-    print("Type any Number for 1")
+    print("Type any Number for a Radius")
     t=input(">>>")
     t=int(t)
     t=(math.pi * t**2)
     print(t)
 
 def triangleArea():
-    print("Type any Number for 1")
+    print("Type any Number for Base")
     t=input(">>>")
-    print("Type any Number for 2")
+    print("Type any Number for Height")
     f=input(">>>")
     t=int(t)
     f=int(f)
@@ -53,9 +53,9 @@ def triangleArea():
     print(t)
 
 def rectangleArea():
-    print("Type any Number for 1")
+    print("Type any Number for Side 1")
     t=input(">>>")
-    print("Type any Number for 2")
+    print("Type any Number for Side 2")
     f=input(">>>")
     t=int(t)
     f=int(f)
